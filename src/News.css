@@ -1,0 +1,82 @@
+/* News.css */
+
+.news-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .news-image {
+    width: 100%;
+    height: auto; /* Adjust if you want a fixed height */
+  }
+  
+  .news-text-content {
+    padding: 16px;
+  }
+  
+  .news-source {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .news-title {
+    display: block; /* Makes the link block-level for better hit area */
+    margin: 8px 0;
+    color: #000;
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+  }
+  
+  .news-title:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  
+  .news-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .news-description {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .news-date {
+    color: #999;
+    font-size: 0.8rem;
+  }
+  
+  .error-message, .loading-message {
+    text-align: center;
+    color: #cc0000;
+  }
+  
+  @media (max-width: 1024px) {
+    .news-grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .news-grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  h1{
+    text-align: center;
+    color: #ddd;
+    background-color: #000000;
+    padding: 10px;
+  }
